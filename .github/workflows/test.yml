@@ -10,12 +10,13 @@ on:
   pull_request:
     branches: [ main ]
 jobs:
- runs-on:ubuntu-latest
- steps:
- - run:
-  echo $PATH
-  node -v
-  npm -v 
-  python -v
-  go -v
-  git -v
+ build:
+   runs-on: ubuntu-latest
+   steps:
+   - run:
+       echo $PATH
+       node -v
+       npm -v 
+       python -v
+       go -v
+       git -v
